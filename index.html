@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kaiden's Alarm Clock</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"><!--Google font for title-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet"><!--The only free Google font that looked like space numbers-->
+</head>
+
+<!--Note: I wanted this alarm clock to be space-themed for elemnetary aged kids. I kept the theme in mind for the layout.
+Kaiden is my 8 year old cousin. I also wanted to throw an element of nostalgia into this project by making the alarm 
+the theme song from the 90s tv show, The Magic School Bus. It was one of the highlights of every science class! -->
+<body>
+    <h1> Kaiden's Space Alarm Clock</h1>
+        <h2 id="inner"></h2>
+        <h3>Set Alarm</h3>
+    <div class="clockInput"> 
+        <label>
+           <select id="ch" ></select> <!--ah will represent the clock hours-->
+        </label>
+        <label>
+            <select id="cm" ></select> <!--ah will represent the clock minutes-->
+        </label>
+        <label>
+             <select id="cs" ></select> <!--ah will represent the clock seconds-->
+        </label>
+    </div>
+    <div class="buttons">
+        <button  id="alarmStart" onClick="setAlarm()">Set Alarm</button>
+        <button  id="alarmEnd" onClick="clearAlarm()">End Alarm </button>
+    </div>   
+    <script src="JavaScript/app.js"></script>
+</body>
+</html>
